@@ -1,0 +1,21 @@
+study,architecture,effect,se,outcome,timing
+Contractor & Reyes (2026),Open/unguided,0.266,0.125,Test score,Immediate AI-off
+Bassner et al. (2026) ChatGPT,Open/unguided,-0.011,0.148,Knowledge gain,Immediate AI-off
+Bastani et al. (2025) GPT Base,Open/unguided,-0.190,0.079,Unassisted exam,Immediate AI-off
+Fischer et al. (2025) unrestricted,Open/unguided,0.337,0.116,Incentivized test,Post-study AI-off
+Gan et al. (2024),Open/unguided,0.398,0.193,Orthopedics test,Post-intervention AI-off
+Hou et al. (2026) unguided,Open/unguided,0.093,0.246,Learning assessment,Post-intervention AI-off
+Kavadella et al. (2024),Open/unguided,0.520,0.245,Knowledge examination,Post-assignment AI-off
+Kazemitabaar et al. (2023),Open/unguided,-0.050,0.241,Immediate post-test,Immediate AI-off
+Lehmann et al. (2024) Study 2,Open/unguided,0.250,0.245,Learning outcome,Immediate AI-off
+Lehmann et al. (2024) Study 3,Open/unguided,0.420,0.245,Learning outcome,Immediate AI-off
+Ba et al. (2024),Structured/scaffolded,-0.067,0.228,Theoretical knowledge,Post-intervention AI-off
+Bassner et al. (2026) Iris,Structured/scaffolded,-0.073,0.146,Knowledge gain,Immediate AI-off
+Bastani et al. (2025) GPT Tutor,Structured/scaffolded,-0.010,0.047,Unassisted exam,Immediate AI-off
+Dai et al. (2025) Experiment 1,Structured/scaffolded,0.212,0.154,Physics achievement,Post-intervention AI-off
+Dai et al. (2025) Experiment 2,Structured/scaffolded,0.111,0.098,Physics achievement,Post-intervention AI-off
+De Simone et al. (2025),Structured/scaffolded,0.238,0.068,English skills,Post-intervention AI-off
+Fischer et al. (2025) restricted,Structured/scaffolded,0.132,0.122,Incentivized test,Post-study AI-off
+Hou et al. (2026) guided,Structured/scaffolded,0.864,0.266,Learning assessment,Post-intervention AI-off
+Huang et al. (2025),Structured/scaffolded,0.669,0.150,Dental operative skills,Post-intervention AI-off
+LearnLM Team (2026),Structured/scaffolded,0.258,0.115,Mathematics assessment,Post-intervention AI-off
