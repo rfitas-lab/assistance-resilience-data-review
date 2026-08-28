@@ -1,0 +1,43 @@
+id,year,title,decision,reason
+I01,2024,AI chatbots in programming education: guiding success or encouraging plagiarism,include,
+I02,2025,Generative AI without guardrails can harm learning: Evidence from high school mathematics,include,
+I03,2025,Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation processes and performance,include,
+I04,2025,AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting,include,
+I05,2025,ChatGPT as a cognitive crutch: Evidence from a randomized controlled trial on knowledge retention,include,
+I06,2025,ChatGPT versus peer role-play for Korean EFL pragmatics,include,
+I07,2025,Bridging the gap: ChatGPT's role in enhancing STEM education,include,
+I08,2025,Human and AI mistakes in academic writing and information integration,include,
+I09,2025,ChatGPT as a learning tool for medical students: Results from a randomized controlled trial,include,
+I10,2026,Comparing ChatGPT and teacher corrective feedback in online L2 learning,include,
+I11,2026,Can generative AI empower Tibetan students in English writing?,include,
+I12,2026,Dialogic ChatGPT instruction and retention/transfer in digital-image processing,include,
+I13,2026,Integrating ChatGPT into nursing education: a randomized trial exploring knowledge retention and student perspectives,include,
+I14,2026,Application of an iterative generative AI-augmented teaching model in medical immunology education,include,
+I15,2026,Learning from misleading AI explanations in medical diagnosis,include,
+I16,2026,Layer-sensitive cognitive offloading in generative AI-assisted writing,include,
+I17,2026,AI assistance reduces persistence and hurts independent performance,include,
+I18,2026,Does AI Help or Hurt Learning?,include,
+I19,2026,Experimental Evidence on the Learning Impact of Generative AI,include,
+I20,2026,The AI Penalty: Learning losses from outsourcing homework to ChatGPT,include,
+I21,2026,AI assistance and skill learning in logic puzzles,include,
+I22,2026,Faster completion less learning: Generative AI reduced study time on math problems and the knowledge they build,include,
+I23,2026,Do gains from generative AI-enabled adaptive pretesting persist? Evidence from a retention study,include,
+E01,2026,A Meta-Analysis of ChatGPT's Influence on Learning Achievement,exclude,secondary review/meta-analysis
+E02,2026,The Impact of GenAI Chatbots on Student Learning in Higher Education: A Literature Review,exclude,secondary review
+E03,2026,Generative AI Cognitive Offloading and Learner Agency in Higher Education: A Scoping Review,exclude,secondary scoping review
+E04,2026,Generative AI in higher education: a meta-analysis of intellectual and social-emotional outcomes,exclude,secondary meta-analysis
+E05,2025,Effects of Generative Artificial Intelligence on K-12 and Higher Education Students' Learning Outcomes: A Meta-Analysis,exclude,secondary meta-analysis
+E06,2025,Pedagogical applications of generative AI in higher education: A systematic review of the field,exclude,secondary review
+E07,2025,The ChatGPT Fact-Check: exploiting the limitations of generative AI to develop evidence-based reasoning skills in college science courses,exclude,instructional description without comparative retained-capability outcome
+E08,2025,The perceived impact of artificial intelligence on academic learning,exclude,self-report/perception without independent behavioral outcome
+E09,2026,Teacher-regulated generative AI support student agency and perceived learning gains in higher education,exclude,perceived learning; no independent behavioral outcome
+E10,2026,Evidence trust and objectivity with generative AI: a qualitative interview study of pre-service science teachers' truth-assessment practices,exclude,qualitative only
+E11,2026,From initial trust to critical reconstruction: upper secondary students' engagement with generative AI in science learning,exclude,qualitative only
+E12,2025,Learning with AI: self-reported student experience,exclude,self-report only
+E13,2025,ChatGPT acceptance and academic performance survey,exclude,cross-sectional association; no withdrawal/transfer design
+E14,2025,Generative AI attitudes and academic self-efficacy,exclude,attitudinal outcome only
+E15,2026,Teacher perceptions of AI-supported assessment,exclude,teacher perception; no learner capability outcome
+E16,2026,Institutional adoption of generative AI in higher education,exclude,policy/adoption study; no behavioral learning outcome
+E17,2025,AI literacy scale development,exclude,measurement development without assistance-withdrawal comparison
+E18,2026,Student trust in large language models,exclude,trust outcome without independent performance
+E19,2026,Ethical governance of generative AI in universities,exclude,conceptual/policy paper
