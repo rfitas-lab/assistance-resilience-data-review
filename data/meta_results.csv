@@ -1,0 +1,5 @@
+analysis,k,mean,se_hk,ci_low,ci_high,tau2,I2,Q,pred_low,pred_high
+Open/unguided architecture,10,0.1763,0.0755,-0.0096,0.3623,0.03665,67.84,27.9845,-0.2950,0.6476
+Structured/scaffolded architecture,10,0.2014,0.0840,0.0115,0.3913,0.03961,75.07,36.1067,-0.2872,0.6900
+Delayed retention primary,5,0.0304,0.2776,-0.7404,0.8013,0.30419,91.31,46.0480,-1.6840,1.7448
+Delayed retention without Barcaui,4,0.1771,0.3246,-0.8558,1.2100,0.33249,83.96,18.7065,-1.9287,2.2829
