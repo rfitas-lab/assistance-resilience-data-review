@@ -1,0 +1,20 @@
+id,title,year,reason
+E01,A Meta-Analysis of ChatGPT's Influence on Learning Achievement,2026,secondary review/meta-analysis
+E02,The Impact of GenAI Chatbots on Student Learning in Higher Education: A Literature Review,2026,secondary review
+E03,Generative AI Cognitive Offloading and Learner Agency in Higher Education: A Scoping Review,2026,secondary scoping review
+E04,Generative AI in higher education: a meta-analysis of intellectual and social-emotional outcomes,2026,secondary meta-analysis
+E05,Effects of Generative Artificial Intelligence on K-12 and Higher Education Students' Learning Outcomes: A Meta-Analysis,2025,secondary meta-analysis
+E06,Pedagogical applications of generative AI in higher education: A systematic review of the field,2025,secondary review
+E07,The ChatGPT Fact-Check: exploiting the limitations of generative AI to develop evidence-based reasoning skills in college science courses,2025,instructional description without comparative retained-capability outcome
+E08,The perceived impact of artificial intelligence on academic learning,2025,self-report/perception without independent behavioral outcome
+E09,Teacher-regulated generative AI support student agency and perceived learning gains in higher education,2026,perceived learning; no independent behavioral outcome
+E10,Evidence trust and objectivity with generative AI: a qualitative interview study of pre-service science teachers' truth-assessment practices,2026,qualitative only
+E11,From initial trust to critical reconstruction: upper secondary students' engagement with generative AI in science learning,2026,qualitative only
+E12,Learning with AI: self-reported student experience,2025,self-report only
+E13,ChatGPT acceptance and academic performance survey,2025,cross-sectional association; no withdrawal/transfer design
+E14,Generative AI attitudes and academic self-efficacy,2025,attitudinal outcome only
+E15,Teacher perceptions of AI-supported assessment,2026,teacher perception; no learner capability outcome
+E16,Institutional adoption of generative AI in higher education,2026,policy/adoption study; no behavioral learning outcome
+E17,AI literacy scale development,2025,measurement development without assistance-withdrawal comparison
+E18,Student trust in large language models,2026,trust outcome without independent performance
+E19,Ethical governance of generative AI in universities,2026,conceptual/policy paper
