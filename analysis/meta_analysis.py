@@ -16,7 +16,9 @@ def reml_hk(y, se):
     def score(tau2):
         w = 1.0 / (v + tau2)
         mu = np.sum(w * y) / np.sum(w)
-        return np.sum(w**2 * ((y - mu)**2 - (v + tau2)))
+        # REML score: the final term accounts for estimating the intercept.
+        # Omitting it gives the profile-ML score, not REML.
+        return np.sum(w**2 * (y - mu)**2) - np.sum(w) + np.sum(w**2) / np.sum(w)
 
     if score(0.0) <= 0:
         tau2 = 0.0
@@ -52,8 +54,16 @@ def main():
     for label, frame in arch.groupby('architecture', sort=False):
         rows.append({'analysis': label, **reml_hk(frame.effect, frame.se)})
     rows.append({'analysis': 'Delayed retention primary', **reml_hk(delayed.effect, delayed.se)})
-    rows.append({'analysis': 'Delayed retention without Barcaui', **reml_hk(delayed.loc[~delayed.study.str.contains('Barcaui'), 'effect'], delayed.loc[~delayed.study.str.contains('Barcaui'), 'se'])})
+    for omitted in ['Kreijkes', 'Barcaui']:
+        keep = ~delayed.study.str.contains(omitted)
+        rows.append({'analysis': f'Delayed retention without {omitted}', **reml_hk(delayed.loc[keep, 'effect'], delayed.loc[keep, 'se'])})
     out = pd.DataFrame(rows)
+    out.to_csv(DATA / 'meta_results.csv', index=False, float_format='%.8f')
+    loo = []
+    for idx, row in delayed.iterrows():
+        keep = delayed.index != idx
+        loo.append({'omitted_study': row.study, **reml_hk(delayed.loc[keep, 'effect'], delayed.loc[keep, 'se'])})
+    pd.DataFrame(loo).to_csv(DATA / 'delayed_leave_one_out.csv', index=False, float_format='%.8f')
     print(out.to_string(index=False))
 
 

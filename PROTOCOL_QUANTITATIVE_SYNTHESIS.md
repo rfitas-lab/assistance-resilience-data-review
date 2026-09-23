@@ -1,15 +1,34 @@
-# Quantitative triangulation rules
+# Secondary quantitative analysis
 
-The quantitative layer is secondary triangulation of the focal review rather than a redefinition of the focal screening denominator.
+This document describes the selected contrasts and estimators used for the supplementary quantitative analysis. The selection is an illustrative secondary analysis, separate from the 23-report focal synthesis. The 20 architecture contrasts, five delayed contrasts and eight descriptive pairs do not constitute a census of all eligible estimates in the source dataset.
 
-## Architecture analysis
-Use one first independent/AI-off standardized student effect per eligible comparison and classify assistance broadly as open/unguided or structured/scaffolded. Fit separate random-effects models. Do not formally contrast the two architecture means because some multi-arm trials share controls across categories.
+## Source records and inputs
 
-## Delayed retention
-Use one delayed independent standardized student effect per eligible comparison. The primary model contains all five eligible contrasts. Report a prespecified sensitivity excluding the Barcaui contrast because its standard error is reconstructed from a reported confidence interval.
+The external data snapshot and its identifiers are recorded in `ATLAS_SOURCE.md`. The analysis CSVs identify selected source records by estimate ID; `data/atlas_selected_estimates.json` preserves their unrounded values. Standardised effects and standard errors in the analysis CSVs are rounded to three decimal places.
 
-## Estimation
-Fit random-effects models with REML heterogeneity estimation, modified Hartung-Knapp confidence intervals, and 95% prediction intervals. Report tau-squared, I-squared and Cochran Q. Leave-one-out results are diagnostic and do not replace the primary model.
+## Architecture contrasts
 
-## Paired AI-on / AI-off display
-Arm-level pairs are descriptive because outcomes and scales differ across studies. They illustrate performance-learning dissociation and are not pooled as a meta-analytic estimand.
+`data/architecture_effects.csv` contains ten open or unguided and ten structured or scaffolded first independent/AI-off contrasts. Estimate separate models for these two selected sets. Some multi-arm studies share controls across sets, so the two estimates are descriptive summaries rather than an independent-groups test of architecture. Architecture labels are not randomised moderators.
+
+## Delayed independent performance
+
+`data/delayed_retention_effects.csv` contains five selected delayed contrasts: Contractor and Reyes (2026), Barcaui (2025), Kazemitabaar et al. (2023), Kalam et al. (2025), and Kreijkes et al. (2026). Report the full set, plus separate sensitivity analyses excluding Kreijkes (active note-taking comparator) and Barcaui (standard error reconstructed from a confidence interval). `data/delayed_leave_one_out.csv` reports all single-study omissions. These exploratory checks do not replace the full-set summary.
+
+## Estimator
+
+Estimate between-study variance by restricted maximum likelihood (REML), including the intercept-estimation term in its score equation. Use modified Hartung–Knapp variance bounded below by the conventional random-effects variance and a t distribution with k − 1 degrees of freedom for 95% confidence intervals. Approximate 95% prediction intervals use the same critical value and the square root of τ² plus the estimated variance of the mean; intervals with few studies are especially uncertain. Compute Cochran Q using fixed inverse-variance weights and I² = max(0, (Q − k + 1)/Q).
+
+## Descriptive assistance pairs
+
+`data/paired_ai_on_off.csv` contains eight same-arm descriptive AI-on/AI-off pairs. The outcomes may differ in timing and scale; do not interpret their differences as pooled treatment effects, within-person causal decrements, or correlations. No significance test is specified for these pairs.
+
+## Reproduction
+
+From the repository root:
+
+```bash
+python analysis/meta_analysis.py
+python analysis/tests/test_reml.py
+```
+
+Dependencies: Python 3, numpy, pandas, scipy. The script uses local inputs and does not require network access.

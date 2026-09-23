@@ -1,9 +1,9 @@
-study_arm,ai_on,ai_off
-Bastani et al. GPT Base,0.480,-0.190
-Bastani et al. GPT Tutor,1.260,-0.010
-Fan et al. AI vs Human Expert,0.660,0.450
-Fan et al. AI vs Checklist,0.750,0.220
-Kalam et al. ChatGPT,2.480,0.930
-Kazemitabaar et al.,1.670,-0.050
-Bassner et al. ChatGPT,0.752,-0.011
-Contractor & Reyes,0.173,0.266
+study_arm,ai_on,ai_off,atlas_ai_on_id,atlas_ai_off_id
+Bastani et al. GPT Base,0.48,-0.19,bastani_etal_2025__est1,bastani_etal_2025__est3
+Bastani et al. GPT Tutor,1.26,-0.01,bastani_etal_2025__est2,bastani_etal_2025__est4
+Fan et al. AI vs Human Expert,0.66,0.45,fan_etal_2025__sg1,fan_etal_2025__sg3
+Fan et al. AI vs Checklist,0.75,0.22,fan_etal_2025__sg2,fan_etal_2025__sg4
+Kalam et al. ChatGPT,2.48,0.93,kalam_etal_2025__est16,kalam_etal_2025__est17
+Kazemitabaar et al.,1.67,-0.05,kazemitabaar_etal_2023__est18,kazemitabaar_etal_2023__est19
+Bassner et al. ChatGPT,1.1,-0.011,bassner_etal_2026__est63,bassner_etal_2026__est60
+Contractor & Reyes,0.173,0.266,contractor_reyes_2026__contractor_and_reyes_2026_session_one_essay,contractor_reyes_2026__contractor_and_reyes_2026_session_one_test
